@@ -4,13 +4,13 @@ class Iedit < Formula
   version "0.2.0"
 
   MACOS_X86_URL = "https://github.com/gooplancton/iedit/releases/download/v0.2.0/iedit-macos-x86_64"
-  MACOS_X86_SHA = "8a0fbee5d6ce16788c7e037eacb93e2a3d65767da7e619bc4d6ddd59df18a92c"
+  MACOS_X86_SHA = "48a70af59fc27a56f97b0c088a836f155a372aec8477f59640b0d17d4dc202ef"
 
   MACOS_ARM_URL = "https://github.com/gooplancton/iedit/releases/download/v0.2.0/iedit-macos-arm64"
-  MACOS_ARM_SHA = "2077eb7d88290a96d8404d156cdee834bc9822a312a7229da66f75f619e348d1"
+  MACOS_ARM_SHA = "77d40ab035a13e8b289749ad904bc37afe46fb2fb2e06f36f1967651d8c149f5"
 
   LINUX_URL = "https://github.com/gooplancton/iedit/releases/download/v0.2.0/iedit-linux"
-  LINUX_SHA = "0703d50711063f8df9f3e99fe0e51fc1d13d43a9b08afb19ce98cfacce6e08e7"
+  LINUX_SHA = "f3f92f45e3ba15b6c0bd536c43d82c54ee246360e19a8c983cf0e2e876d44f51"
 
   on_macos do
     if Hardware::CPU.intel?

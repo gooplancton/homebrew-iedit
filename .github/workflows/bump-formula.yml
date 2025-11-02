@@ -53,9 +53,9 @@ jobs:
           content.gsub!(/LINUX_URL\s+=\s+"[^"]+"/, "LINUX_URL = \"#{ENV['LINUX_URL']}\"")
           
           # Update SHAs
-          content.gsub!(/sha256\s+"REPLACE_WITH_ACTUAL_SHA256_FOR_x86_64"/, "sha256 \"#{ENV['MACOS_X86_SHA']}\"")
-          content.gsub!(/sha256\s+"REPLACE_WITH_ACTUAL_SHA256_FOR_arm64"/, "sha256 \"#{ENV['MACOS_ARM_SHA']}\"")
-          content.gsub!(/sha256\s+"REPLACE_WITH_ACTUAL_SHA256_FOR_linux"/, "sha256 \"#{ENV['LINUX_SHA']}\"")
+          content.gsub!(/MACOS_X86_SHA\s+=\s+"[^"]+"/, "MACOS_X86_SHA = \"#{ENV['MACOS_X86_SHA']}\"")
+          content.gsub!(/MACOS_ARM_SHA\s+=\s+"[^"]+"/, "MACOS_ARM_SHA = \"#{ENV['MACOS_ARM_SHA']}\"")
+          content.gsub!(/LINUX_SHA\s+=\s+"[^"]+"/, "LINUX_SHA = \"#{ENV['LINUX_SHA']}\"")
           
           File.write(formula_file, content)
           EOF

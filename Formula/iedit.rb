@@ -1,16 +1,16 @@
 class Iedit < Formula
   desc "Minimal text editor that opens alongside the scrollback buffer"
   homepage "https://github.com/gooplancton/iedit"
-  version "0.3.2"
+  version "0.3.3"
 
-  MACOS_X86_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.2/iedit-macos-x86_64"
-  MACOS_X86_SHA = "ae74bffa9ca7de4a2c147df58ddbfa93d4616896519dc39b5b7e4db312bf6100"
+  MACOS_X86_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.3/iedit-macos-x86_64"
+  MACOS_X86_SHA = "b717fde03d6ac9af78de69770a6775da790cb7c6de17de28b4da7e9b0aa0dbc4"
 
-  MACOS_ARM_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.2/iedit-macos-arm64"
-  MACOS_ARM_SHA = "9882e88e95027838d5fa5e4d34c53f7f666aba6a9030b264e9ac31efdce159cd"
+  MACOS_ARM_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.3/iedit-macos-arm64"
+  MACOS_ARM_SHA = "6b959ffe4a16e6a13e4abb9f9daf04c52d2acc9b63358d111af70b24c3968dc0"
 
-  LINUX_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.2/iedit-linux"
-  LINUX_SHA = "d05e1a094918b70389c4db4c1a0e0af545b59856cd60e0910bb115acfd37828b"
+  LINUX_URL = "https://github.com/gooplancton/iedit/releases/download/v0.3.3/iedit-linux"
+  LINUX_SHA = "481e509d1259d331c5f26c1cc8b037108d82dd0962969ee0df162f4432005ce2"
 
   on_macos do
     if Hardware::CPU.intel?
